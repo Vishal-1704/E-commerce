@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+/* Add the following styles to your CSS file */
+
+.sidebar {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.sidebar h4 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #23527c;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    margin: 10px;
+}
+
+.product-name a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-name a:hover {
+    color: #007bff;
+}
+
+.product-price {
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.product-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.product-hover a {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.product-hover a:hover {
+    background-color: #0056b3;
+}
+
+.product-item:hover .product-hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
